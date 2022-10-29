@@ -1,0 +1,43 @@
+body {
+    background-color: cadetblue;
+}
+
+
+.main {
+    display: flex;
+    height: 580px;
+    justify-content: center;
+}
+
+.pc,
+.mobile,
+.tablet {
+    color: brown;
+    font-size: 80px;
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+    .mobile {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles */
+    .tablet {
+        display: block;
+    }
+  }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1200px) {
+    /* Styles */
+    .pc {
+        display: block;
+    }
+  }
